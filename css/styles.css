@@ -66,3 +66,14 @@ h1 {
     font-size: 4em;
     margin-bottom: 0px;
 }
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+div {
+    margin:auto;
+    width: 50%;
+    text-align: center;
+}
