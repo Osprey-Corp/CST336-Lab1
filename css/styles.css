@@ -1,6 +1,6 @@
 body {
     background-color:black;
-    color:gray;
+    color:white;
 }
 
 header, main, nav, footer {
@@ -77,4 +77,9 @@ div {
     margin:auto;
     width: 50%;
     text-align: center;
+}
+
+.current-nav {
+  font-size: 2.0em;
+  color:violet;
 }
