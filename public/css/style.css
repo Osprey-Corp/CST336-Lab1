@@ -1,0 +1,101 @@
+input {
+  margin: 4px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-size:45px;
+}
+
+h5 {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+body {
+  background-color: rgb(67, 67, 167);
+  font-family: 'Roboto', sans-serif;
+}
+
+span {
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 10px;
+}
+
+a {
+  color: pink;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 500ms;
+}
+
+a:hover {
+  color: darkred;
+  font-size:25px;
+  font-size-adjust: 25px;
+  font-weight:bold;
+}
+
+hr {
+  border-top: 6px solid white;
+}
+
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  width: 500px;
+  background-color: rgb(41, 41, 41);
+  border-style: solid;
+  color: lavender;
+}
+
+#error_message {
+  color: red!important;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#welcome {
+  background-image: linear-gradient(to left, rgb(226, 16, 226), orange, red, pink, yellow, orange, red); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#add_book_category {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#add_book_message {
+  color: lightgreen;
+  font-size: 20px;
+}
+
+#edit_book_message {
+  color: lightblue;
+  font-size: 20px;
+}
+
+#book_list_book {
+  color: lightblue;
+  border-style: solid;
+  font-size: 19px;
+  margin-top: 10px;
+}

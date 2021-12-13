@@ -1,0 +1,70 @@
+<%- include('partials/header.ejs') %>
+      <h1>Edit Book</h1> <hr>
+      <input id="edit_id" value="<%=book[0].id%>" hidden/>
+      Title:&nbsp;&nbsp; &nbsp;<input id="edit_title" value="<%=book[0].title%>"/> <br>
+      Author:<input id="edit_author" value="<%=book[0].author%>"/> <br>
+      ISBN:&nbsp; &nbsp;<input id="edit_isbn" value="<%=book[0].isbn%>"/> <br>
+
+      Category: <select id="edit_book_category">
+        <option 
+        <% if (book[0].category == "Adventure") { %>
+          selected 
+        <% } %>
+        >Adventure</option>
+        <option 
+        <% if (book[0].category == "Mystery") { %>
+          selected 
+        <% } %>
+        >Mystery</option>
+        <option 
+        <% if (book[0].category == "History") { %>
+          selected 
+        <% } %>
+        >History</option>
+        <option 
+        <% if (book[0].category == "Horror") { %>
+          selected 
+        <% } %>
+        >Horror</option>
+        <option 
+        <% if (book[0].category == "Romance") { %>
+          selected 
+        <% } %>
+        >Romance</option>
+        <option 
+        <% if (book[0].category == "Sci-Fi") { %>
+          selected 
+        <% } %>
+        >Sci-Fi</option>
+        <option 
+        <% if (book[0].category == "Suspense") { %>
+          selected 
+        <% } %>
+        >Suspense</option>
+      </select> <br>
+
+      Age group:
+      <input type="radio" id="children" name="agegroup" value="children"         
+      <% if (book[0].agegroup == "children") { %>
+          checked 
+        <% } %>
+      >
+      <label for="children">Children</label>
+      <input type="radio" id="teens" name="agegroup" value="teens"
+      <% if (book[0].agegroup == "teens") { %>
+        checked 
+      <% } %>
+      >
+      <label for="teens">Teenagers</label>
+      <input type="radio" id="adults" name="agegroup" value="adults" 
+      <% if (book[0].agegroup == "adults") { %>
+        checked 
+      <% } %>
+      >
+      <label for="adults">Adults</label> <br>
+
+      <button id="edit_book_btn" class="btn btn-info">Edit Book</button>
+      <h3 id="edit_book_message"></h3>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+      <h1>Book List</h1> <hr>
+      <% for (book of books) { %>
+          <h5 id="book_list_book">Title: <%=book.title%> <br>
+          Author: <%=book.author%> <br>
+          ISBN: <%=book.isbn%> <br>
+          Category: <%=book.category%> <br>
+          Age: <%=book.agegroup%> <br>
+          Favorite Count: <%=book.favorite_count%> <br>
+          <a href="/edit_book?id=<%=book.id%>">Edit</a> <a href="/delete_book?id=<%=book.id%>">Delete</a> 
+          
+          <% let x = 0 %>
+          <% for (favorite of favorites) { %>
+            <% if (favorite.book_id == book.id && favorite.user_id == userId) { %>
+              <% x = 1; %>
+            <% } %>
+          <% } %>
+
+          <% if (x == 1) { %>
+            <a href="/unfavorite_book?book_id=<%=book.id%>">Un-Favorite</a>
+          <% } else {%>
+            <a href="/favorite_book?book_id=<%=book.id%>">Favorite</a>
+          <% } %>
+          </h3>
+      <% } %>
+    </main>
+  </body>
+</html>

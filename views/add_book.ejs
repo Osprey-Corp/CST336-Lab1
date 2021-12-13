@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+      <h1>Add a Book</h1> <hr>
+      Title:&nbsp;&nbsp; &nbsp;<input id="add_title"/> <br>
+      Author:<input id="add_author"/> <br>
+      ISBN:&nbsp; &nbsp;<input id="add_isbn"/> <br>
+      Category: <select id="add_book_category">
+        <option>Adventure</option>
+        <option>Mystery</option>
+        <option>History</option>
+        <option>Horror</option>
+        <option>Romance</option>
+        <option>Sci-Fi</option>
+        <option>Suspense</option>
+      </select> <br>
+
+      Age group:
+      <input type="radio" id="children" name="agegroup" value="children">
+      <label for="children">Children</label>
+      <input type="radio" id="teens" name="agegroup" value="teens">
+      <label for="teens">Teenagers</label>
+      <input type="radio" id="adults" name="agegroup" value="adults">
+      <label for="adults">Adults</label> <br>
+
+      <button id="add_book_btn" class="btn btn-danger">Add Book</button>
+      <h3 id="add_book_message"></h3>
+    </main>
+  </body>
+</html>
